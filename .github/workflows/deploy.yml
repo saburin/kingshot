@@ -38,7 +38,7 @@ jobs:
     - name: Check output contents abs
       run: |
         echo "Output directory contents:"
-        ls -R /home/runner/work/kingshot/kingshot/output/
+        ls -R /home/runner/work/kingshot/kingshot/output/*
 
     - name: Check output contents abs_all
       run: |
