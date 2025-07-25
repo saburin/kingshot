@@ -23,11 +23,15 @@ def translate_text_argos(text):
 def get_page(url):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, 'html.parser')
+
+    path = urlparse(url).path
+    slug = os.path.basename(path)
     title = soup.find("h1").get_text()
     content_div = soup.find("div", {"class": "mw-parser-output"})
     paragraphs = content_div.find_all(['p', 'h2', 'h3'])
     content = "\n".join([p.get_text() for p in paragraphs])
-    return title, content
+
+    return slug, content
 
 # ---------------------------
 # Markdown保存
