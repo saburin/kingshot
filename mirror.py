@@ -32,7 +32,7 @@ def get_page(url):
 # ---------------------------
 # Markdown保存
 # ---------------------------
-def save_markdown(title, content, path='pages'):
+def save_markdown(title, content, path='output'):
     os.makedirs(path, exist_ok=True)
     filename = f"{path}/{title.replace(' ', '_').lower()}.md"
     with open(filename, "w", encoding='utf-8') as f:
