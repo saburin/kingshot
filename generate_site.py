@@ -7,8 +7,8 @@ PAGES_DIR = "pages"
 OUTPUT_DIR = "output"
 
 base_dir = os.path.dirname(__file__)  # スクリプトのあるディレクトリ
-TEMPLATE_PATH = os.path.join(base_dir, TEMPLATE_PATH)
-OUTPUT_DIR = os.path.join(base_dir, OUTPUT_DIR)
+# TEMPLATE_PATH = os.path.join(base_dir, TEMPLATE_PATH)
+# OUTPUT_DIR = os.path.join(base_dir, OUTPUT_DIR)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # テンプレート読み込み
