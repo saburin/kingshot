@@ -18,7 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install markdown jinja2 argostranslate
+        pip install markdown jinja2 argostranslate beautifulsoup4 requests
 
     - name: Install Argos Translate model
       run: |
