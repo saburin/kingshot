@@ -5,8 +5,6 @@ from jinja2 import Template
 TEMPLATE_PATH = "templates/base.html"
 PAGES_DIR = "pages"
 OUTPUT_DIR = "output"
-print(os.path.abspath(OUTPUT_DIR))
-OUTPUT_DIR = "/home/runner/work/kingshot/kingshot/output/"
 
 base_dir = os.path.dirname(__file__)  # スクリプトのあるディレクトリ
 # TEMPLATE_PATH = os.path.join(base_dir, TEMPLATE_PATH)
