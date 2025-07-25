@@ -6,16 +6,6 @@ import os
 import argostranslate.package
 import argostranslate.translate
 
-# ---------------------------
-# モデルインストール（初回のみ）
-# ---------------------------
-def install_argos_model():
-    import urllib.request
-    model_url = "https://www.argosopentech.com/argospm/packages/translate-en_ja-1_0.argosmodel"
-    model_path = "en_ja.argosmodel"
-    urllib.request.urlretrieve(model_url, model_path)
-    argostranslate.package.install_from_path(model_path)
-    os.remove(model_path)
 
 # ---------------------------
 # 翻訳処理
@@ -52,8 +42,6 @@ def save_markdown(title, content, path='pages'):
 # 実行部
 # ---------------------------
 if __name__ == "__main__":
-    install_argos_model()
-
     url = "https://kingshot.fandom.com/wiki/Kingshot"
     title, content_en = get_page(url)
     print("原文取得完了")
