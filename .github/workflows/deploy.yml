@@ -34,7 +34,17 @@ jobs:
       run: |
         echo "Output directory contents:"
         ls -R output
+        
+    - name: Check output contents abs
+      run: |
+        echo "Output directory contents:"
+        ls -R /home/runner/work/kingshot/kingshot/output/
 
+    - name: Check output contents abs_all
+      run: |
+        echo "Output directory contents:"
+        ls -all /home/runner/work/kingshot/kingshot/
+        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
