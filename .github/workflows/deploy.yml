@@ -22,7 +22,7 @@ jobs:
 
     - name: Install Argos Translate model
       run: |
-        curl -L -o model.argosmodel https://downloads.argosopentech.com/argospm/packages/translate-en_ja-1_1.argosmodel
+        curl -L -o model.argosmodel https://argos-net.com/v1/translate-en_ja-1_1.argosmodel
         python -c "import argostranslate.package; argostranslate.package.install_from_path('model.argosmodel')"
 
     - name: Run mirror + generate
