@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.7;
+}
+h1, h2, h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3em;
+}
